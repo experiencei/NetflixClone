@@ -19,10 +19,13 @@ function Banner() {
         <header className="banner" 
         style={{
             backgroundSize : "cover",
-            backgroundImage : `url("")`
+            backgroundImage : `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
+            backgroundPosition : "center center"
         }}>
            <div className="banner__contents">
-
+            <h1>
+                {movie?.title || movie?.name || movie?.original_name}
+            </h1>
            </div>
         </header>
     )
