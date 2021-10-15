@@ -1,7 +1,7 @@
 import './App.css';
 import Row from './component/row/Row';
 import requests from './component/netflix/requests';
-
+import Banner from "./component/banner/Banner"
 function App() {
   return (
     <div className="app">
