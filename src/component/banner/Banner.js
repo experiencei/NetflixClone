@@ -16,8 +16,14 @@ function Banner() {
            fetchData();
        }, [])
     return (
-        <header>
-            
+        <header className="banner" 
+        style={{
+            backgroundSize : "cover",
+            backgroundImage : `url("")`
+        }}>
+           <div className="banner__contents">
+
+           </div>
         </header>
     )
 }
