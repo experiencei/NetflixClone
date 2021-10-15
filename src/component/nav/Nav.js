@@ -1,6 +1,10 @@
 import React from 'react'
+import "./Nav.css";
+
+
 
 function Nav() {
+    
     return (
         <div className="nav">
             <img
@@ -10,7 +14,7 @@ function Nav() {
             />
             <img
                 className="nav__Avatar"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREC5qV632io_TZ5ZbJFIe46QYfeajYroB1XA&usqp=CAU"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPm5EH-EDew7FxgYspYP_3PhMdQN9s2OKKlQ&usqp=CAU"
                 alt="Netflix Logo"
             />
         </div>

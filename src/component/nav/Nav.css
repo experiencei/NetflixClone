@@ -5,6 +5,9 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    height: 30px;
+    z-index: 1;
+    background-color: #111;
 }
 .nav__Logo{
 position: fixed;
@@ -12,7 +15,7 @@ left: 20px;
 width: 80px;
 object-fit: contain;
 }
-.nav_Aavatar{
+.nav__Avatar{
 position: fixed;
 right: 20px;
 width: 30px;
