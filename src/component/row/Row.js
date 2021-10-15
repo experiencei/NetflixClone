@@ -2,6 +2,8 @@ import React, { useState , useEffect } from 'react';
 import axios from "../axios/axios"
 import "./Row.css";
 import YouTube from "react-youtube";
+// import movieTrailer from "movie-trailer";
+import movieTrailer from "movie-trailer";
 
 const base_url = "https://image.tmdb.org/t/p/original/"
 function Row({ title , fetchUrl, isLargeRow}) {
@@ -31,7 +33,7 @@ const opts = {
       } else {
           movieTrailer(movie?.name || "")
            .then((url)  => {
-             const urlParams = new URLSearchParams( new URL(url).search);
+const urlParams = new URLSearchParams(new URL(url).search);
              setTrailerUrl(urlParams.get("v"));
            })
            .catch((error) => console.log(error));
