@@ -34,7 +34,11 @@ const opts = {
       } else {
           movieTrailer(movie?.name || "")
            .then((url)  => {
-               if(!url) alert(`No Trailer Found For ${movie?.name}`)
+
+  if(!url && !movie?.name){ alert(`No Trailer Found For This Movie`)}
+  else if (!url) {
+    alert(`No Trailer Found For ${movie?.name}`)
+  }
 const urlParams = new URLSearchParams(new URL(url).search);
              setTrailerUrl(urlParams.get("v"));
            })
