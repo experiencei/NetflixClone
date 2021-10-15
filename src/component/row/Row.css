@@ -1,0 +1,10 @@
+ .row__poster{
+     display: flex;
+ }
+ 
+.row__posters{
+    width: 100%;
+    object-fit: contain;
+    min-height: 100px;
+
+}
